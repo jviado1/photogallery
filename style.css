@@ -78,21 +78,21 @@ figure {
 }
 #rocky,#switzerland,
  #uk, #usa {
-    bottom: 260px;
+    bottom: 250px;
 }
 #iran, #ireland {
-    bottom: 590px;
+    bottom: 570px;
 }
 #guatemala, #wyoming {
     color: #ffffff;
-    bottom: 260px;
+    bottom: 250px;
 }
 #italy {
     bottom: 35px;
 }
 #chile, #hawaii, #moab {
     color: #ffffff;
-    bottom: 35px;
+    bottom: 30px;
 }
 input {
     width: 80%;
