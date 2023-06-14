@@ -5,32 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joab Amos D. Viado">
+    <link rel="stylesheet" href="style.css">
     <title>Photo Gallery</title>
 </head>
 <body>
     <header>
-        <h1>TK Photography</h1>
+        <h1 id="logo"><a href="#logo">TK Photography</a></h1>
         <nav>
             <ul>
-                <li>about</li>
-                <li>gallery</li>
-                <li>contact</li>
-                <li>top</li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#top">top</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="about">
             <h2>About</h2>
-            <p>Hello! 
-                I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
+            <p>Hello!<br><br>
+                I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my specialty and it’s taken me all over the world. 
                 </p>
         </section>
-        <section>
+        <section id="gallery">
             <h2>Gallery</h2>
-            
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+            <figure>
+                <img src="images/Chile.png" alt="Beach in Chile" style="width:100%">
+                <figcaption id="chile">Chile, 2001</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Guatemala.png" alt="A boardwalk and a lake in Guatemala" style="width:100%">
+                <figcaption id="guatemala">Guatemala, 1997</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Hawaii.png" alt="An island in Hawaii" style="width:100%">
+                <figcaption id="hawaii">Hawaii, 2010</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Iran.png" alt="Desert in Iran" style="width:100%">
+                <figcaption id="iran">Iran, 1999</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Ireland.png" alt="A countryside hill in Ireland" style="width:100%">
+                <figcaption id="ireland">Ireland, 2012</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Italy.png" alt="A blue lake surrounded by mountains in Italy" style="width:100%">
+                <figcaption id="italy">Italy, 2015</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Moab-Desert.png" alt="An elevated view of the Moab-Desert during dusk" style="width:100%">
+                <figcaption id="moab">Moab-Desert, 2020</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Rocky-Mountains.png" alt="Rocky mountains surrounded by water" style="width:100%">
+                <figcaption id="rocky">Rocky-Mountains, 2009</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Switzerland.png" alt="A snowy mountainous area in Switzerland" style="width:100%">
+                <figcaption id="switzerland">Switzerland, 2014</figcaption>
+            </figure>
+            <figure>
+                <img src="images/UK.png" alt="Green hills in the UK" style="width:100%">
+                <figcaption id="uk">UK, 2005</figcaption>
+            </figure>
+            <figure>
+                <img src="images/USA.png" alt="A field with colorful flowers" style="width:100%">
+                <figcaption id="usa">USA, 2021</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Wyoming.png" alt="A lake surrounded by pine trees and mountains" style="width:100%">
+                <figcaption id="wyoming">Wyoming, 2021</figcaption>
+            </figure>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please fill out this form and I'll connect with you soon.</p>
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                  <label for="name">NAME</label>
+                  <input type="text" name="name" id="name" required placeholder="YOUR FULL NAME">
+                </div>
+                <div class="form-example">
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" required placeholder="ENTER YOUR EMAIL ADDRESS">
+                </div>
+                <div class="form-example">
+                    <label for="message">MESSAGE</label>
+                    <input type="message" name="message" id="message" required placeholder="WHAT CAN I HELP YOU WITH?">
+                  </div>
+                <div class="form-example">
+                  <input type="submit" value="SUBMIT">
+                </div>
+              </form>
         </section>
     </main>
-    
+    <footer>
+        <small>copyright 2021 tk photography</small>
+    </footer>
 </body>
 </html>

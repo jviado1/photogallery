@@ -1,0 +1,237 @@
+/* GLOBAL STYLE */
+body {
+    background-color: #000000;
+    text-transform: uppercase;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-size: 1.25em;
+    text-transform: none;
+    margin: auto 10px;
+}
+figcaption, label, input, small {font-size: 1em;}
+nav {
+    background-color: #000000;   
+}
+#logo a {
+    text-decoration: none;
+    color: #007d7b;
+}
+#logo a:active {
+    color: #000000;
+}
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border: #ffffff 3px solid;
+    padding: 5px;
+  }
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #007d7b;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav li {
+    list-style: none;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+    padding: 5px;
+    background-color: #ffffff; 
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+#about,
+#gallery {
+    background-color: #ffffff;
+}
+#contact,
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+form label {
+    color: #ffffff;
+}
+figcaption {
+    position: relative;
+    text-align: center;
+}
+figure {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#rocky,#switzerland,
+ #uk, #usa {
+    bottom: 260px;
+}
+#iran, #ireland {
+    bottom: 590px;
+}
+#guatemala, #wyoming {
+    color: #ffffff;
+    bottom: 260px;
+}
+#italy {
+    bottom: 35px;
+}
+#chile, #hawaii, #moab {
+    color: #ffffff;
+    bottom: 35px;
+}
+input {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+label {
+    text-align: left;
+    padding-left: 60px;
+    
+}
+input, label {
+    display: block;
+    
+}
+/* experimented with ::placeholder and :placeholder-shown */
+input::placeholder {
+    color: #007d7b;
+    font-weight: bold;
+}
+#gallery p,
+#contact p {
+    padding-bottom: 40px;
+}
+input[type=submit] {
+    width: 50%;
+    background-color: #007d7b;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 10px;
+    border-style: none;
+}
+footer {
+    padding: 40px 0 20px 0;
+}
+
+@media screen and (min-width: 485px) {
+    body {
+        margin: 0 auto;
+        width: 465px;
+    }
+    #about {
+        margin-bottom: -30px;
+        padding-bottom: 40px;
+    }
+    #about h2 {
+        padding-top: 15px;
+    }
+    #gallery p {
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-width: 880px) {
+    body {
+        width: 800px;
+    }
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #gallery > h2,
+    #gallery p {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-start: span 2;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    ul {
+        gap: 20px;
+    }
+    #gallery figure img {
+        display: flex;
+    }
+    #logo {
+        text-align: left;
+    }
+    figure {
+        margin: 0 10px;
+    }
+    #gallery img {
+        width: 100%;
+    }
+    #rocky,#switzerland,
+    #uk, #usa {
+        bottom: 245px;
+    }
+    #iran, #ireland {
+        bottom: 555px;
+    }
+    #guatemala, #wyoming {
+        bottom: 240px;
+    }
+    #italy {
+        bottom: 30px;
+    }
+    #chile, #hawaii, #moab {
+        bottom: 25px;
+    }
+    label {
+        padding-left: 80px;
+    }
+}
+
+@media (min-width: 1100px) {
+    body {
+        width: 1100px;
+    }
+    nav {
+        justify-content: end;
+    }
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #gallery > h2,
+    #gallery p {
+        grid-column-start: span 3;
+    }
+    label {
+        padding-left: 110px;
+    }
+    #rocky,#switzerland,
+    #uk, #usa {
+        bottom: 220px;
+    }
+    #iran, #ireland {
+        bottom: 510px;
+    }
+    #guatemala, #wyoming {
+        bottom: 220px;
+    }
+    #italy {
+        bottom: 30px;
+    }
+    #chile, #hawaii, #moab {
+        bottom: 25px;
+    }
+}
